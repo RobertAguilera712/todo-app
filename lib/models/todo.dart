@@ -9,5 +9,5 @@ class Todo {
   late String name;
   late bool isCompleted;
 
-  Todo({required this.name, required this.isCompleted});
+  Todo({required this.name, this.isCompleted = false});
 }
