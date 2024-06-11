@@ -23,7 +23,7 @@ class DialogBox extends StatelessWidget {
             TextField(
               controller: controller,
               decoration:
-                  InputDecoration(label: Text("Todo"), hintText: "Todo"),
+                  const InputDecoration(label: Text("Todo"), hintText: "Todo"),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:isar/isar.dart';
 import 'package:provider/provider.dart';
 import 'package:todo_app/models/todo.dart';
 import 'package:todo_app/view_models/todo_view_model.dart';
@@ -17,7 +16,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
         backgroundColor: Colors.red[200],
         appBar: AppBar(
-          title: Text("R Todo"),
+          title: const Text("R Todo"),
           elevation: 0,
         ),
         floatingActionButton: FloatingActionButton(
@@ -42,7 +41,7 @@ class HomePage extends StatelessWidget {
               },
             );
           },
-          child: Icon(
+          child: const Icon(
             Icons.add,
             color: Colors.white,
           ),
