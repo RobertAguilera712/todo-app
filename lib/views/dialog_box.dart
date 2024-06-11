@@ -3,8 +3,8 @@ import 'package:todo_app/views/my_button.dart';
 
 class DialogBox extends StatelessWidget {
   final TextEditingController controller;
-  VoidCallback onCancel;
-  VoidCallback onSave;
+  final VoidCallback onCancel;
+  final VoidCallback onSave;
   DialogBox(
       {super.key,
       required this.controller,
@@ -15,7 +15,7 @@ class DialogBox extends StatelessWidget {
   Widget build(BuildContext context) {
     return AlertDialog(
       backgroundColor: Colors.red[300],
-      content: Container(
+      content: SizedBox(
         height: 120,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
