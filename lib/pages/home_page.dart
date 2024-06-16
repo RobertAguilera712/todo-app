@@ -28,7 +28,7 @@ class HomePage extends StatelessWidget {
                 return DialogBox(
                   controller: controller,
                   onSave: (){
-                    final name = controller.text;
+                    final name = controller.text.trim();
                     if (name.isNotEmpty){
                       viewModel.upsertTodo(Todo(name: name));
                       Navigator.of(context).pop();
